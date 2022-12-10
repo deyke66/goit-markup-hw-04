@@ -128,9 +128,9 @@ p {
 }
 
 .link {
-    display: block;
-    padding-top: 31px;
-        padding-bottom: 31px;
+    display: inline-block;
+    padding-top: 32px;
+        padding-bottom: 32px;
 
     color: var(--color-text-secondary);
     text-decoration: none;
@@ -146,30 +146,48 @@ p {
 }
 
 .aside {
-    display: block;
-    padding-top: 31px;
-    padding-bottom: 31px;
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
 
-    color: var(--color-text-secondary);
+    color: var(--color-text-primary);
     text-decoration: none;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    align-items: center;
+
 }
+
 
 .list.aside-list {
     display: flex;
     margin-left: auto;
+    align-items: center;
+    
 }
+
 
 .aside-item {
     display: block;
 }
+.icon-aside {
+
+    fill: #757575;
+    margin-right: 10px;
+    
+    
+}
+
 .aside:hover,
 .aside:focus {
     color: var(--color-blue);
 }
-
+.aside:hover .icon-aside {
+    fill: var(--color-blue);
+}
 .list .aside-item:not(:last-child) {
     margin-right: 40px;
 }
