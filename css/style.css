@@ -294,10 +294,7 @@ justify-content: center;
 
 
 }
-.icon-main {
-    
-    
-}
+
 
 .section-title {
     display: inline-block;
@@ -442,17 +439,29 @@ gap: 30px;
     
 }
 
-.client-item {
+.client-icon {
+    fill: var(--color-social-icon);
+    
+}
+.client-link:hover,
+.client-link:focus {
+    border: 1px solid var(--color-blue);
+}
 
+.client-icon:hover,
+.client-icon:focus {
+    fill: var(--color-blue);
 }
 
 .client-link {
-    display: block;
+    display: flex;
     width: 170px;
         height: 92px;
     
         border: 1px solid var(--color-social-icon);
         border-radius: 4px;
+        align-items: center;
+        
 }
 /* portfol */
 .portfolio-list {
